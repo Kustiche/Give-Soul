@@ -1,0 +1,55 @@
+.catalog
+  padding: 50px 0
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__cards
+    display: flex
+    flex-wrap: wrap
+    gap: 40px
+
+  &__card
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 405px
+    width: 100%
+    padding-bottom: 30px
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1)
+    border-radius: 20px
+
+  &__img
+    margin-bottom: 30px
+    border-radius: 20px 20px 0 0
+
+  &__heading
+    margin-bottom: 10px
+    max-width: 330px
+    text-align: center
+    font-family: "Montserrat-SemiBold", sans-serif
+    font-weight: 600
+    font-size: 30px
+    line-height: 34px
+    &--push
+      margin-bottom: 44px
+
+  &__price
+    margin-bottom: 25px
+    font-family: "Montserrat-SemiBold", sans-serif
+    font-weight: 600
+    font-size: 40px
+    line-height: 44px
+
+  &__button
+    margin-bottom: 20px
+
+  &__button-more
+    margin-bottom: 0
+    font-family: "Montserrat-Medium", sans-serif
+    font-weight: 500
+    font-size: 20px
+    line-height: 24px
+    color: $gray

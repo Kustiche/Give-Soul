@@ -11,7 +11,9 @@
 
 	<body>
 		@include('chunk/header.html')
-		<main class="main">@include('chunk/hero.html')</main>
+		<main class="main">
+			@include('chunk/hero.html') @include('chunk/catalog.html')
+		</main>
 		@include('chunk/footer.html')
 		<script src="js/scripts.min.js"></script>
 	</body>
