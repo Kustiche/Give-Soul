@@ -1,0 +1,28 @@
+.logo
+
+  &__img
+    max-width: 200px
+    height: 64px
+
+.menu
+  display: flex
+
+  &__item
+    margin-right: 40px
+    position: relative
+    font-family: "Montserrat-SemiBold", sans-serif
+    font-weight: 600
+    &::after
+      position: absolute
+      content: ""
+      border-top: 1px solid $kelp
+      width: 0
+      left: 50%
+      top: 105%
+      transform: translateX(-50%)
+      transition: width .4s
+    &:last-child
+      margin-right: 0
+    &:hover
+      &::after
+        width: 100%
