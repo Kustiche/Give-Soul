@@ -1,0 +1,45 @@
+.certificate
+  padding: 50px 0
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__img
+    width: 620px
+    height: 465px
+    background-image: url(../img/certificat/certificates.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    border-radius: 20px
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 620px
+
+  &__title
+    margin-bottom: 30px
+    font-size: 37px
+    text-transform: uppercase
+
+  &__list
+    padding-left: 20px
+
+  &__item
+    margin-bottom: 15px
+    position: relative
+    &:last-child
+      margin-bottom: 0
+    &::after
+      position: absolute
+      content: ""
+      width: 10px
+      height: 10px
+      background-color: $dingley
+      top: 5px
+      left: -20px
+      border-radius: 50px
