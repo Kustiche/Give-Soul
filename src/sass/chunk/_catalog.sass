@@ -6,10 +6,27 @@
     flex-direction: column
     align-items: center
 
+  &__title
+    @media screen and ( max-width: 515px )
+      margin-bottom: 30px
+      font-size: 30px
+    @media screen and ( max-width: 400px )
+      font-size: 21px
+      line-height: 25px
+
   &__cards
     display: flex
     flex-wrap: wrap
+    justify-content: space-between
     gap: 40px
+    @media screen and ( max-width: 1325px )
+      justify-content: space-around
+    @media screen and ( max-width: 880px )
+      justify-content: space-between
+    @media screen and ( max-width: 815px )
+      justify-content: space-around
+    @media screen and ( max-width: 540px )
+      gap: 15px
 
   &__card
     display: flex
@@ -20,10 +37,19 @@
     padding-bottom: 30px
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1)
     border-radius: 20px
+    @media screen and ( max-width: 880px )
+      padding-bottom: 10px
+      max-width: 235px
+    @media screen and ( max-width: 515px )
+      max-width: 160px
 
   &__img
     margin-bottom: 30px
     border-radius: 20px 20px 0 0
+    width: 100%
+    height: auto
+    @media screen and ( max-width: 880px )
+      margin-bottom: 10px
 
   &__heading
     margin-bottom: 10px
@@ -35,6 +61,25 @@
     line-height: 34px
     &--push
       margin-bottom: 44px
+    &--vr-on
+      display: none
+    @media screen and ( max-width: 880px )
+      margin-bottom: 10px
+      font-size: 19px
+      &--push
+        margin-bottom: 44px
+    @media screen and ( max-width: 515px )
+      margin-bottom: 10px
+      max-width: 140px
+      font-size: 16px
+      line-height: 20px
+      &--push
+        max-width: 130px
+      &--vr-off
+        display: none
+      &--vr-on
+        display: inline-block
+        max-width: 80px
 
   &__price
     margin-bottom: 25px
@@ -42,9 +87,23 @@
     font-weight: 600
     font-size: 40px
     line-height: 44px
+    @media screen and ( max-width: 880px )
+      margin-bottom: 10px
+      font-size: 30px
+    @media screen and ( max-width: 515px )
+      font-size: 20px
+      line-height: 24px
 
   &__button
     margin-bottom: 20px
+    @media screen and ( max-width: 880px )
+      margin-bottom: 10px
+      padding: 8px 43px
+      font-size: 16px
+    @media screen and ( max-width: 515px )
+      padding: 8px 38px
+      font-size: 12px
+      line-height: 16px
 
   &__button-more
     margin-bottom: 0
@@ -56,3 +115,6 @@
     transition: transform .4s
     &:hover
       transform: scale(.95)
+    @media screen and ( max-width: 515px )
+      font-size: 12px
+      line-height: 16px
