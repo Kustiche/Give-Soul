@@ -4403,7 +4403,8 @@ body {
 }
 
 .questions {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 95px;
 }
 .questions__wrap {
   display: -webkit-box;
@@ -4417,6 +4418,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.questions__title {
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
 
 .spollers {
   width: 100%;
@@ -4424,9 +4429,6 @@ body {
 .spollers__item {
   margin-bottom: 10px;
   position: relative;
-}
-.spollers__item:last-child {
-  margin-bottom: 0;
 }
 .spollers__item::after {
   position: absolute;
@@ -4445,6 +4447,12 @@ body {
   top: 20px;
   right: 20px;
   border-radius: 50px;
+}
+.spollers__item:last-child {
+  margin-bottom: 0;
+}
+.spollers__item:last-child::after {
+  width: 0;
 }
 .spollers__title {
   font-size: 18px;
