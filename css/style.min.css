@@ -4401,4 +4401,103 @@ body {
   left: -20px;
   border-radius: 50px;
 }
+
+.questions {
+  padding: 50px 0;
+}
+.questions__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spollers {
+  width: 100%;
+}
+.spollers__item {
+  margin-bottom: 10px;
+  position: relative;
+}
+.spollers__item:last-child {
+  margin-bottom: 0;
+}
+.spollers__item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border: 2px solid #EAEBEF;
+  bottom: 0;
+  left: 0;
+}
+.spollers__item::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #E8E8E8;
+  top: 20px;
+  right: 20px;
+  border-radius: 50px;
+}
+.spollers__title {
+  font-size: 18px;
+  position: relative;
+  width: 100%;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: left;
+  color: #333333;
+}
+.spollers__text {
+  padding-bottom: 25px;
+  line-height: 130%;
+  color: #333333;
+}
+.spollers.init .spollers__title {
+  padding: 25px 0 25px 0;
+}
+.spollers.init .spollers__title::before, .spollers.init .spollers__title::after {
+  content: "";
+  position: absolute;
+  right: 32px;
+  top: 45px;
+  width: 15px;
+  height: 2px;
+  background-color: #333333;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+.spollers.init .spollers__title::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.spollers.init .spollers__title::after {
+  right: 42px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.spollers.init .spollers__title.active::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.spollers.init .spollers__title.active::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 /*# sourceMappingURL=style.min.css.map */
