@@ -4361,6 +4361,11 @@ body {
     max-width: 160px;
   }
 }
+@media screen and (max-width: 365px) {
+  .catalog__card {
+    max-width: 200px;
+  }
+}
 .catalog__img {
   margin-bottom: 30px;
   border-radius: 20px 20px 0 0;
@@ -4411,6 +4416,18 @@ body {
   }
   .catalog__heading--vr-on {
     display: inline-block;
+    max-width: 80px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .catalog__heading {
+    max-width: 160px;
+    font-size: 18px;
+  }
+  .catalog__heading--push {
+    max-width: 140px;
+  }
+  .catalog__heading--vr-on {
     max-width: 80px;
   }
 }
