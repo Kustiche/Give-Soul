@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Дари Душой</title>
 		<link type="image/svg" href="favicons/favicon.svg" rel="icon" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+			rel="stylesheet"
+		/>
 		<link href="css/style.min.css" rel="stylesheet" />
 	</head>
 
@@ -55,7 +59,122 @@
 
 		<main class="main">
 			<section class="hero">
-	<div class="container"></div>
+	<div class="container">
+		<div class="hero__wrap">
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div
+							style="
+								background-image: linear-gradient(
+										90deg,
+										rgba(0, 0, 0, 0.4) 0%,
+										rgba(0, 0, 0, 0) 100%
+									),
+									url(./img/hero/hero-slide-1.jpg);
+							"
+							class="hero__slide"
+						>
+							<span class="hero__price">от&nbsp;990&nbsp;&#8381;</span>
+							<h1 class="hero__title title">Конная прогулка</h1>
+							<a class="hero__link link-reset" href="#">Заказать впечатление</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div
+							style="
+								background-image: linear-gradient(
+										90deg,
+										rgba(0, 0, 0, 0.4) 0%,
+										rgba(0, 0, 0, 0) 100%
+									),
+									url(./img/hero/hero-slide-2.jpg);
+							"
+							class="hero__slide"
+						>
+							<span class="hero__price">3&nbsp;000&nbsp;&#8381;</span>
+							<h1 class="hero__title title">Полет на&nbsp;мотопараплане</h1>
+							<a class="hero__link link-reset" href="#">Заказать впечатление</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div
+							style="
+								background-image: linear-gradient(
+										90deg,
+										rgba(0, 0, 0, 0.4) 0%,
+										rgba(0, 0, 0, 0) 100%
+									),
+									url(./img/hero/hero-slide-3.jpg);
+							"
+							class="hero__slide"
+						>
+							<span class="hero__price">от&nbsp;3&nbsp;500&nbsp;&#8381;</span>
+							<h1 class="hero__title title">
+								Прогулка на&nbsp;яхте &laquo;Чайка&raquo;
+							</h1>
+							<a class="hero__link link-reset" href="#">Заказать впечатление</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div
+							style="
+								background-image: linear-gradient(
+										90deg,
+										rgba(0, 0, 0, 0.4) 0%,
+										rgba(0, 0, 0, 0) 100%
+									),
+									url(./img/hero/hero-slide-4.jpg);
+							"
+							class="hero__slide"
+						>
+							<span class="hero__price">от&nbsp;3&nbsp;000&nbsp;&#8381;</span>
+							<h1 class="hero__title title">Вечер в&nbsp;куполе</h1>
+							<a class="hero__link link-reset" href="#">Заказать впечатление</a>
+						</div>
+					</div>
+					...
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="hero__terms">
+				<div class="hero__card">
+					<svg class="hero__icon">
+						<use href="img/sprite.svg#like-money-icon"></use>
+					</svg>
+					<span class="hero__excerpt">Впечатления по&nbsp;цене партнёра</span>
+				</div>
+				<div class="hero__card">
+					<svg class="hero__icon">
+						<use href="img/sprite.svg#truck-icon"></use>
+					</svg>
+					<span class="hero__excerpt"
+						>Бесплатная доставка в&nbsp;день заказа</span
+					>
+				</div>
+				<div class="hero__card">
+					<svg class="hero__icon">
+						<use href="img/sprite.svg#certificate-icon"></use>
+					</svg>
+					<span class="hero__excerpt"
+						>Красивые сертификаты на&nbsp;любое впечатление</span
+					>
+				</div>
+				<div class="hero__card hero__card--already">
+					<svg class="hero__icon">
+						<use href="img/sprite.svg#trust-icon"></use>
+					</svg>
+					<span class="hero__excerpt hero__excerpt--already"
+						>Проверенные партнёры</span
+					>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
  <section class="catalog">
 	<div class="container">
@@ -204,7 +323,16 @@
 			<section class="certificate">
 	<div class="container">
 		<div class="certificate__wrap">
-			<div class="certificate__img"></div>
+			<h2 class="certificate__title certificate__title--off title">
+				Сертификат в&nbsp;дизайнерском конверте
+			</h2>
+			<div class="certificate__inner-img">
+				<img
+					class="certificate__img"
+					src="img/certificat/certificates.jpg"
+					alt="Сертификаты"
+				/>
+			</div>
 			<div class="certificate__content">
 				<h2 class="certificate__title title">
 					Сертификат в&nbsp;дизайнерском конверте
@@ -377,6 +505,7 @@
 	</div>
 </footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="js/scripts.min.js"></script>
 	</body>
 </html>
