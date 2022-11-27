@@ -5100,6 +5100,7 @@ body {
   max-width: 450px;
   width: 100%;
   max-height: 450px;
+  border-radius: 20px;
 }
 @media screen and (max-width: 920px) {
   .service-description__img {
@@ -5131,6 +5132,7 @@ body {
   margin-bottom: 20px;
   font-size: 36px;
   line-height: 40px;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .service-description__title {
@@ -5142,7 +5144,7 @@ body {
 @media screen and (max-width: 425px) {
   .service-description__title {
     margin-bottom: 0;
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .service-description__price {
@@ -5188,7 +5190,7 @@ body {
     line-height: 20px;
   }
 }
-.service-description__container {
+.service-description__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5196,6 +5198,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .service-description__heading {
   margin-bottom: 20px;
@@ -5251,11 +5256,8 @@ body {
   content: "";
   width: 10px;
   height: 10px;
-  top: 50%;
+  top: 5px;
   left: -20px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
   background-color: #547147;
   border-radius: 10px;
 }
