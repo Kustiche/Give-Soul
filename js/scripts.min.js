@@ -192,7 +192,24 @@ data-spollers="768,min" - спойлеры будут работать толь�
 
 Если нужно что бы в блоке открывался болько один слойлер добавляем атрибут data-one-spoller
 */
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.swiper1', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+	speed: 800,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+		clickable: true,
+  },
+
+	autoplay: {
+		delay: 3000,
+	},
+});
+
+const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,

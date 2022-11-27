@@ -62,12 +62,13 @@
 	<div class="container">
 		<div class="hero__wrap">
 			<!-- Slider main container -->
-			<div class="swiper">
+			<div class="swiper swiper1">
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
 					<!-- Slides -->
 					<div class="swiper-slide">
 						<div
+							class="hero__slide"
 							style="
 								background-image: linear-gradient(
 										90deg,
@@ -76,7 +77,6 @@
 									),
 									url(./img/hero/hero-slide-1.jpg);
 							"
-							class="hero__slide"
 						>
 							<span class="hero__price">от&nbsp;990&nbsp;&#8381;</span>
 							<h1 class="hero__title title">Конная прогулка</h1>
@@ -85,6 +85,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div
+							class="hero__slide"
 							style="
 								background-image: linear-gradient(
 										90deg,
@@ -93,7 +94,6 @@
 									),
 									url(./img/hero/hero-slide-2.jpg);
 							"
-							class="hero__slide"
 						>
 							<span class="hero__price">3&nbsp;000&nbsp;&#8381;</span>
 							<h1 class="hero__title title">Полет на&nbsp;мотопараплане</h1>
@@ -102,6 +102,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div
+							class="hero__slide"
 							style="
 								background-image: linear-gradient(
 										90deg,
@@ -110,7 +111,6 @@
 									),
 									url(./img/hero/hero-slide-3.jpg);
 							"
-							class="hero__slide"
 						>
 							<span class="hero__price">от&nbsp;3&nbsp;500&nbsp;&#8381;</span>
 							<h1 class="hero__title title">
@@ -121,6 +121,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div
+							class="hero__slide"
 							style="
 								background-image: linear-gradient(
 										90deg,
@@ -129,7 +130,6 @@
 									),
 									url(./img/hero/hero-slide-4.jpg);
 							"
-							class="hero__slide"
 						>
 							<span class="hero__price">от&nbsp;3&nbsp;000&nbsp;&#8381;</span>
 							<h1 class="hero__title title">Вечер в&nbsp;куполе</h1>
@@ -320,7 +320,61 @@
 	</div>
 </section>
 
-			<section class="certificate">
+			<section class="action">
+	<div class="container">
+		<!-- Slider main container -->
+		<div class="swiper swiper2" data-slider-id="slider-1">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<div
+						class="action__slide"
+						style="background-image: url(./img/action/action-slide-1.jpg)"
+					>
+						<div class="action__inner">
+							<h3 class="action__subtitle title">Акция месяца</h3>
+							<h2 class="action__title title">
+								полёт в&nbsp;аэротрубе для двоих!
+							</h2>
+							<div class="action__inner-price">
+								<span class="action__descr">1&nbsp;800&nbsp;&#8381;</span>
+								<span class="action__price">1&nbsp;200&nbsp;&#8381;</span>
+							</div>
+							<a class="action__link button link-reset" href="#"
+								>Заказать впечатление</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div
+						class="action__slide"
+						style="background-image: url(./img/action/action-slide-2.jpg)"
+					>
+						<div class="action__inner">
+							<h3 class="action__subtitle title">Акция месяца</h3>
+							<h2 class="action__title action__title--push title">
+								Конная прогулка
+							</h2>
+							<div class="action__inner-price action__inner-price--already">
+								<span class="action__descr">990&nbsp;&#8381;</span>
+								<span class="action__price">490&nbsp;&#8381;</span>
+							</div>
+							<a class="action__link button link-reset" href="#"
+								>Заказать впечатление</a
+							>
+						</div>
+					</div>
+				</div>
+				...
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination swiper-pagination-two"></div>
+		</div>
+	</div>
+</section>
+ <section class="certificate">
 	<div class="container">
 		<div class="certificate__wrap">
 			<h2 class="certificate__title certificate__title--off title">
@@ -359,7 +413,8 @@
 		</div>
 	</div>
 </section>
- <section class="questions">
+
+			<section class="questions">
 	<div class="container">
 		<div class="questions__wrap">
 			<h2 class="questions__title title">Часто задаваемые вопросы</h2>
