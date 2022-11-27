@@ -197,6 +197,7 @@ const swiper1 = new Swiper('.swiper1', {
   direction: 'horizontal',
   loop: true,
 	speed: 800,
+	spaceBetween: 10,
 
   // If we need pagination
   pagination: {
@@ -214,6 +215,7 @@ const swiper2 = new Swiper('.swiper2', {
   direction: 'horizontal',
   loop: true,
 	speed: 800,
+	spaceBetween: 10,
 
   // If we need pagination
   pagination: {
