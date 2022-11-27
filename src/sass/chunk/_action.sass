@@ -1,0 +1,76 @@
+.action
+  padding: 50px 0
+
+  &__slide
+    height: 100%
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+  &__inner
+    padding-top: 60px
+    padding-left: 60px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 640px
+
+  &__subtitle
+    margin-bottom: 35px
+    font-family: "Montserrat-Medium", sans-serif
+    font-weight: 500
+    font-size: 30px
+    line-height: 34px
+    color: $white
+
+  &__title
+    margin-bottom: 25px
+    font-size: 50px
+    line-height: 54px
+    &--push
+      margin-bottom: 80px
+
+  &__inner-price
+    display: flex
+    justify-content: space-between
+    max-width: 270px
+    width: 100%
+    margin-bottom: 40px
+    &--already
+      max-width: 210px
+
+  &__descr
+    font-family: "Montserrat-Medium", sans-serif
+    font-weight: 500
+    font-size: 26px
+    line-height: 34px
+    color: $silver-chalice
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 100%
+      border-top: 2px solid $silver-chalice
+      top: 50%
+      left: 0
+
+  &__price
+    font-family: "Montserrat-ExtraBold", sans-serif
+    font-weight: 700
+    font-size: 35px
+    line-height: 34px
+
+  &__link
+    padding: 8px 25px
+
+.swiper2
+  height: 450px
+
+.swiper-pagination-two
+  bottom: 0 !important
+  text-align: center
+
+.swiper-pagination-two .swiper-pagination-bullet
+  border: 2px solid $dingley
+  &-active
+    background-color: $dingley
