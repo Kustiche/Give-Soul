@@ -5083,13 +5083,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+@media screen and (max-width: 920px) {
+  .service-description__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .service-description__img {
+  margin-right: 40px;
   max-width: 450px;
+  width: 100%;
   max-height: 450px;
+}
+@media screen and (max-width: 920px) {
+  .service-description__img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 .service-description__content {
   display: -webkit-box;
@@ -5104,10 +5120,30 @@ body {
           align-items: flex-start;
   max-width: 730px;
 }
+@media screen and (max-width: 920px) {
+  .service-description__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .service-description__title {
   margin-bottom: 20px;
   font-size: 36px;
   line-height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .service-description__title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .service-description__title {
+    margin-bottom: 0;
+    font-size: 26px;
+  }
 }
 .service-description__price {
   margin-bottom: 25px;
@@ -5116,9 +5152,50 @@ body {
   font-size: 50px;
   line-height: 54px;
 }
+@media screen and (max-width: 920px) {
+  .service-description__price {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service-description__price {
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .service-description__price {
+    margin-bottom: 5px;
+    font-size: 32px;
+  }
+}
 .service-description__link {
   margin-bottom: 40px;
   padding: 20px 30px;
+}
+@media screen and (max-width: 768px) {
+  .service-description__link {
+    margin-bottom: 30px;
+    padding: 15px 25px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .service-description__link {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.service-description__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .service-description__heading {
   margin-bottom: 20px;
@@ -5128,6 +5205,11 @@ body {
   line-height: 24px;
   text-transform: none;
 }
+@media screen and (max-width: 425px) {
+  .service-description__heading {
+    margin-bottom: 10px;
+  }
+}
 .service-description__text {
   margin-bottom: 20px;
   font-size: 16px;
@@ -5135,6 +5217,12 @@ body {
 }
 .service-description__text:last-child {
   margin-bottom: 0;
+}
+@media screen and (max-width: 425px) {
+  .service-description__text {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 }
 .service-description__list {
   display: -webkit-box;
@@ -5146,6 +5234,11 @@ body {
           flex-direction: column;
   margin-bottom: 20px;
   padding-left: 20px;
+}
+@media screen and (max-width: 425px) {
+  .service-description__list {
+    margin-bottom: 10px;
+  }
 }
 .service-description__item {
   margin-bottom: 20px;
@@ -5169,6 +5262,12 @@ body {
 .service-description__item:last-child {
   margin-bottom: 0;
 }
+@media screen and (max-width: 425px) {
+  .service-description__item {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
 .service-description__caption {
   margin-bottom: 15px;
   font-family: "Montserrat-SemiBold", sans-serif;
@@ -5176,6 +5275,12 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: none;
+}
+@media screen and (max-width: 425px) {
+  .service-description__caption {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 }
 .service-description__list-options {
   display: -webkit-box;
@@ -5187,6 +5292,11 @@ body {
           flex-direction: column;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 425px) {
+  .service-description__list-options {
+    margin-bottom: 10px;
+  }
+}
 .service-description__item-options {
   margin-bottom: 15px;
   font-size: 16px;
@@ -5194,5 +5304,11 @@ body {
 }
 .service-description__item-options:last-child {
   margin-bottom: 0;
+}
+@media screen and (max-width: 425px) {
+  .service-description__item-options {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.min.css.map */
