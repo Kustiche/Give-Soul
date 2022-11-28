@@ -407,6 +407,12 @@ body {
   max-width: 261px;
   height: 84px;
 }
+@media screen and (max-width: 1024px) {
+  .logo__img--footer {
+    max-width: 221px;
+    height: 71px;
+  }
+}
 .logo__img-mini {
   max-width: 61px;
   height: 64px;
@@ -418,6 +424,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 820px) {
+  .menu {
+    display: none;
+  }
+}
 .menu--footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,11 +437,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-@media screen and (max-width: 820px) {
-  .menu {
-    display: none;
-  }
 }
 .menu__item {
   margin-right: 40px;
@@ -467,6 +473,12 @@ body {
 }
 .menu__item--footer::after {
   display: none;
+}
+@media screen and (max-width: 1024px) {
+  .menu__item--footer {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .title {
@@ -4983,6 +4995,11 @@ body {
 .footer {
   padding: 60px 0;
 }
+@media screen and (max-width: 425px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
 .footer__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4994,6 +5011,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
+  gap: 0 20px;
 }
 .footer__wrap::before {
   position: absolute;
@@ -5002,6 +5020,27 @@ body {
   border-top: 1px solid #547147;
   top: -60px;
   left: 0;
+}
+@media screen and (max-width: 850px) {
+  .footer__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer__wrap {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__wrap::before {
+    top: -30px;
+  }
 }
 .footer__inner {
   display: -webkit-box;
@@ -5015,17 +5054,61 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media screen and (max-width: 850px) {
+  .footer__inner {
+    display: none;
+  }
+}
 .footer__copyright {
   max-width: 175px;
   font-size: 14px;
   line-height: 18px;
   color: #888888;
 }
+.footer__copyright--off {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .footer__copyright--off {
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.footer__inner-menu-and-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 445px;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .footer__inner-menu-and-contacts {
+    max-width: 305px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .footer__inner-menu-and-contacts {
+    margin-bottom: 30px;
+  }
+}
 .footer__list-heading {
   margin-bottom: 0;
   font-size: 24px;
   line-height: 28px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 1024px) {
+  .footer__list-heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .footer__contacts {
   display: -webkit-box;
@@ -5045,6 +5128,12 @@ body {
   font-weight: 600;
   font-size: 30px;
   line-height: 34px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__phone {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 .footer__inner-icon {
   display: -webkit-box;
@@ -5067,7 +5156,19 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 320px;
+  min-width: 320px;
+  width: 320px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__questions {
+    min-width: 280px;
+    width: 280px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .footer__questions {
+    margin-bottom: 30px;
+  }
 }
 .footer__title {
   margin-bottom: 15px;
@@ -5077,11 +5178,30 @@ body {
   line-height: 34px;
   text-transform: none;
 }
+@media screen and (max-width: 1024px) {
+  .footer__title {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
 .footer__text {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .footer__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 .footer__button {
   padding: 15px 30px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__button {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .service-description {
