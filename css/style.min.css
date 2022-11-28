@@ -5144,7 +5144,11 @@ body {
   margin-bottom: 20px;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+}
+@media screen and (max-width: 920px) {
+  .service-description__title {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 768px) {
   .service-description__title {
