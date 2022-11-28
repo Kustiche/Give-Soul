@@ -14,7 +14,8 @@
 	</head>
 
 	<body>
-		<header class="header">
+		<div class="site-container">
+			<header class="header">
 	<div class="header__container container">
 		<div class="header__wrap">
 			<a class="logo">
@@ -28,13 +29,13 @@
 			<nav class="nav">
 				<ul class="nav__menu menu list-reset">
 					<li class="menu__item">
-						<a class="menu__link link-reset" href="#">Каталог</a>
+						<a class="menu__link link-reset" href="#catalog">Каталог</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link link-reset" href="#">Акции</a>
+						<a class="menu__link link-reset" href="#action">Акции</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link link-reset" href="#">Контакты</a>
+						<a class="menu__link link-reset" href="#contacts">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -57,8 +58,8 @@
 	</div>
 </header>
 
-		<main class="main">
-			<section class="hero">
+			<main class="main">
+				<section class="hero">
 	<div class="container">
 		<div class="hero__wrap">
 			<!-- Slider main container -->
@@ -80,7 +81,9 @@
 						>
 							<span class="hero__price">от&nbsp;990&nbsp;&#8381;</span>
 							<h1 class="hero__title title">Конная прогулка</h1>
-							<a class="hero__link link-reset" href="#">Заказать впечатление</a>
+							<a class="hero__link modal-link link-reset" href="#modal"
+								>Заказать впечатление</a
+							>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -97,7 +100,9 @@
 						>
 							<span class="hero__price">3&nbsp;000&nbsp;&#8381;</span>
 							<h1 class="hero__title title">Полет на&nbsp;мотопараплане</h1>
-							<a class="hero__link link-reset" href="#">Заказать впечатление</a>
+							<a class="hero__link modal-link link-reset" href="#modal"
+								>Заказать впечатление</a
+							>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -116,7 +121,9 @@
 							<h1 class="hero__title title">
 								Прогулка на&nbsp;яхте &laquo;Чайка&raquo;
 							</h1>
-							<a class="hero__link link-reset" href="#">Заказать впечатление</a>
+							<a class="hero__link modal-link link-reset" href="#modal"
+								>Заказать впечатление</a
+							>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -133,7 +140,9 @@
 						>
 							<span class="hero__price">от&nbsp;3&nbsp;000&nbsp;&#8381;</span>
 							<h1 class="hero__title title">Вечер в&nbsp;куполе</h1>
-							<a class="hero__link link-reset" href="#">Заказать впечатление</a>
+							<a class="hero__link modal-link link-reset" href="#modal"
+								>Заказать впечатление</a
+							>
 						</div>
 					</div>
 				</div>
@@ -175,7 +184,7 @@
 		</div>
 	</div>
 </section>
- <section class="catalog">
+ <section class="catalog" id="catalog">
 	<div class="container">
 		<div class="catalog__wrap">
 			<h2 class="catalog__title title">Каталог впечатлений</h2>
@@ -190,7 +199,9 @@
 						Конная прогулка
 					</h3>
 					<span class="catalog__price">от&nbsp;990&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a class="catalog__button-more link-reset" href="horse-riding.html"
 						>Подробнее</a
 					>
@@ -203,7 +214,9 @@
 					/>
 					<h3 class="catalog__heading title">Полет на мотопараплане</h3>
 					<span class="catalog__price">3&nbsp;000&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a
 						class="catalog__button-more link-reset"
 						href="paragliding-flight.html"
@@ -220,7 +233,9 @@
 						Полет в&nbsp;аэротрубе
 					</h3>
 					<span class="catalog__price">от&nbsp;1&nbsp;800&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a
 						class="catalog__button-more link-reset"
 						href="wind-tunnel-flight.html"
@@ -237,7 +252,9 @@
 						Вечер в&nbsp;куполе
 					</h3>
 					<span class="catalog__price">3&nbsp;000&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a class="catalog__button-more link-reset" href="">Подробнее</a>
 				</div>
 				<div class="catalog__card">
@@ -250,7 +267,9 @@
 						Прогулка на&nbsp;яхте &laquo;Чайка&raquo;
 					</h3>
 					<span class="catalog__price">от&nbsp;3&nbsp;500&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a class="catalog__button-more link-reset" href="">Подробнее</a>
 				</div>
 				<div class="catalog__card">
@@ -261,7 +280,9 @@
 					/>
 					<h3 class="catalog__heading title">Велопрогулка с&nbsp;пикником</h3>
 					<span class="catalog__price">3&nbsp;000&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a class="catalog__button-more link-reset" href="">Подробнее</a>
 				</div>
 				<div class="catalog__card">
@@ -272,7 +293,9 @@
 					/>
 					<h3 class="catalog__heading title">Драйв на квадроциклах</h3>
 					<span class="catalog__price">от&nbsp;1&nbsp;800&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a class="catalog__button-more link-reset" href="">Подробнее</a>
 				</div>
 				<div class="catalog__card">
@@ -283,7 +306,9 @@
 					/>
 					<h3 class="catalog__heading title">Запись песни в&nbsp;студии</h3>
 					<span class="catalog__price">5&nbsp;000&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a class="catalog__button-more link-reset" href="">Подробнее</a>
 				</div>
 				<div class="catalog__card">
@@ -294,7 +319,9 @@
 					/>
 					<h3 class="catalog__heading title">Поездка на&nbsp;болотоходах</h3>
 					<span class="catalog__price">3&nbsp;500&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a class="catalog__button-more link-reset" href="">Подробнее</a>
 				</div>
 				<div class="catalog__card">
@@ -310,7 +337,9 @@
 						Игра в&nbsp;VR
 					</h3>
 					<span class="catalog__price">600&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a class="catalog__button-more link-reset" href="">Подробнее</a>
 				</div>
 				<div class="catalog__card">
@@ -321,7 +350,9 @@
 					/>
 					<h3 class="catalog__heading title">Романтический пикник</h3>
 					<span class="catalog__price">2&nbsp;500&nbsp;₽</span>
-					<a class="catalog__button button link-reset" href="">Заказать</a>
+					<a class="catalog__button button modal-link link-reset" href="#modal"
+						>Заказать</a
+					>
 					<a class="catalog__button-more link-reset" href="">Подробнее</a>
 				</div>
 			</div>
@@ -329,7 +360,7 @@
 	</div>
 </section>
 
-			<section class="action">
+				<section class="action" id="action">
 	<div class="container">
 		<!-- Slider main container -->
 		<div class="swiper swiper2" data-slider-id="slider-1">
@@ -350,7 +381,7 @@
 								<span class="action__descr">1&nbsp;800&nbsp;&#8381;</span>
 								<span class="action__price">1&nbsp;200&nbsp;&#8381;</span>
 							</div>
-							<a class="action__link button link-reset" href="#"
+							<a class="action__link button modal-link link-reset" href="#modal"
 								>Заказать впечатление</a
 							>
 						</div>
@@ -370,7 +401,7 @@
 								<span class="action__descr">990&nbsp;&#8381;</span>
 								<span class="action__price">490&nbsp;&#8381;</span>
 							</div>
-							<a class="action__link button link-reset" href="#"
+							<a class="action__link button modal-link link-reset" href="#modal"
 								>Заказать впечатление</a
 							>
 						</div>
@@ -422,7 +453,7 @@
 	</div>
 </section>
 
-			<section class="questions">
+				<section class="questions">
 	<div class="container">
 		<div class="questions__wrap">
 			<h2 class="questions__title title">Часто задаваемые вопросы</h2>
@@ -504,8 +535,8 @@
 	</div>
 </section>
 
-		</main>
-		<footer class="footer">
+			</main>
+			<footer class="footer" id="contacts">
 	<div class="container">
 		<div class="footer__wrap">
 			<div class="footer__inner">
@@ -562,11 +593,65 @@
 				<p class="footer__text text">
 					Оставьте заявку, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время
 				</p>
-				<a class="footer__button button link-reset" href="#">Оставить заявку</a>
+				<a class="footer__button button modal-link link-reset" href="#modal"
+					>Оставить заявку</a
+				>
 			</div>
 		</div>
 	</div>
 </footer>
+
+		</div>
+		<div class="modal" id="modal">
+	<div class="modal__body">
+		<div class="modal__content">
+			<a class="modal__close close-modal" href="#header">X</a>
+			<div class="modal__title">Отправьте заявку</div>
+			<div class="modal__text">
+				Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время
+			</div>
+			<form class="form" action="URl">
+				<label class="form__name">
+					<input
+						class="form__name-input input"
+						id="name"
+						name="name"
+						type="text"
+						placeholder="Имя"
+						required
+					/>
+				</label>
+				<label class="form__tel">
+					<input
+						class="form__tel-input input"
+						type="tel"
+						placeholder="Телефон"
+						required
+					/>
+				</label>
+				<label class="form__comment"></label>
+				<textarea
+					class="form__comment-input input"
+					name="comment"
+					placeholder="Комментарий"
+				></textarea>
+				<div class="form__inner">
+					<input
+						class="form__checkbox-input"
+						id="checkbox"
+						type="checkbox"
+						required
+					/>
+					<label class="form__checkbox" for="checkbox"
+						>Отправляя заявку&nbsp;Вы соглашаетесь на&nbsp;обработку
+						персональных данных</label
+					>
+				</div>
+				<input class="form__button button" type="submit" />
+			</form>
+		</div>
+	</div>
+</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="js/scripts.min.js"></script>

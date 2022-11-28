@@ -10,7 +10,8 @@
 	</head>
 
 	<body>
-		<header class="header">
+		<div class="site-container">
+			<header class="header">
 	<div class="header__container container">
 		<div class="header__wrap">
 			<a class="logo" href="index.html">
@@ -24,13 +25,17 @@
 			<nav class="nav">
 				<ul class="nav__menu menu list-reset">
 					<li class="menu__item">
-						<a class="menu__link link-reset" href="#">Каталог</a>
+						<a class="menu__link link-reset" href="index.html#catalog"
+							>Каталог</a
+						>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link link-reset" href="#">Акции</a>
+						<a class="menu__link link-reset" href="index.html#action">Акции</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link link-reset" href="#">Контакты</a>
+						<a class="menu__link link-reset" href="index.html#contacts"
+							>Контакты</a
+						>
 					</li>
 				</ul>
 			</nav>
@@ -53,7 +58,7 @@
 	</div>
 </header>
 
-		<main class="main"><section class="service-description">
+			<main class="main"><section class="service-description">
 	<div class="service-description__container container">
 		<div class="service-description__wrap">
 			<img
@@ -64,7 +69,9 @@
 			<div class="service-description__content">
 				<h1 class="service-description__title title">Конная прогулка</h1>
 				<span class="service-description__price">от&nbsp;990&nbsp;&#8381;</span>
-				<a class="service-description__link button link-reset" href="#"
+				<a
+					class="service-description__link button modal-link link-reset"
+					href="#modal"
 					>Заказать впечатление</a
 				>
 				<div class="service-description__inner">
@@ -125,7 +132,7 @@
 	</div>
 </section>
 </main>
-		<footer class="footer">
+			<footer class="footer">
 	<div class="container">
 		<div class="footer__wrap">
 			<div class="footer__inner">
@@ -182,11 +189,65 @@
 				<p class="footer__text text">
 					Оставьте заявку, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время
 				</p>
-				<a class="footer__button button link-reset" href="#">Оставить заявку</a>
+				<a class="footer__button button modal-link link-reset" href="#modal"
+					>Оставить заявку</a
+				>
 			</div>
 		</div>
 	</div>
 </footer>
+
+		</div>
+		<div class="modal" id="modal">
+	<div class="modal__body">
+		<div class="modal__content">
+			<a class="modal__close close-modal" href="#header">X</a>
+			<div class="modal__title">Отправьте заявку</div>
+			<div class="modal__text">
+				Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время
+			</div>
+			<form class="form" action="URl">
+				<label class="form__name">
+					<input
+						class="form__name-input input"
+						id="name"
+						name="name"
+						type="text"
+						placeholder="Имя"
+						required
+					/>
+				</label>
+				<label class="form__tel">
+					<input
+						class="form__tel-input input"
+						type="tel"
+						placeholder="Телефон"
+						required
+					/>
+				</label>
+				<label class="form__comment"></label>
+				<textarea
+					class="form__comment-input input"
+					name="comment"
+					placeholder="Комментарий"
+				></textarea>
+				<div class="form__inner">
+					<input
+						class="form__checkbox-input"
+						id="checkbox"
+						type="checkbox"
+						required
+					/>
+					<label class="form__checkbox" for="checkbox"
+						>Отправляя заявку&nbsp;Вы соглашаетесь на&nbsp;обработку
+						персональных данных</label
+					>
+				</div>
+				<input class="form__button button" type="submit" />
+			</form>
+		</div>
+	</div>
+</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="js/scripts.min.js"></script>
