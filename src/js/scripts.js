@@ -1,3 +1,3 @@
 @include('spollers.js')
 @include('slider.js')
-@include('options.js')
+@include('modal.js')

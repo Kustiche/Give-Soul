@@ -1,0 +1,50 @@
+<div class="modal" id="modal">
+	<div class="modal__body">
+		<div class="modal__content">
+			<a class="modal__close close-modal" href="#header">X</a>
+			<div class="modal__title">Отправьте заявку</div>
+			<div class="modal__text">
+				Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время
+			</div>
+			<form class="form" action="URl">
+				<label class="form__name">
+					<input
+						class="form__name-input input"
+						id="name"
+						name="name"
+						type="text"
+						placeholder="Имя"
+						required
+					/>
+				</label>
+				<label class="form__tel">
+					<input
+						class="form__tel-input input"
+						type="tel"
+						placeholder="Телефон"
+						required
+					/>
+				</label>
+				<label class="form__comment"></label>
+				<textarea
+					class="form__comment-input input"
+					name="comment"
+					placeholder="Комментарий"
+				></textarea>
+				<div class="form__inner">
+					<input
+						class="form__checkbox-input"
+						id="checkbox"
+						type="checkbox"
+						required
+					/>
+					<label class="form__checkbox" for="checkbox"
+						>Отправляя заявку&nbsp;Вы соглашаетесь на&nbsp;обработку
+						персональных данных</label
+					>
+				</div>
+				<input class="form__button button" type="submit" />
+			</form>
+		</div>
+	</div>
+</div>

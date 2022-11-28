@@ -10,9 +10,12 @@
 	</head>
 
 	<body>
-		@include('chunk/services-header.html')
-		<main class="main">@include('chunk/service-description.html')</main>
-		@include('chunk/services-footer.html')
+		<div class="site-container">
+			@include('chunk/services-header.html')
+			<main class="main">@include('chunk/service-description.html')</main>
+			@include('chunk/services-footer.html')
+		</div>
+		@include('chunk/modal.html')
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="js/scripts.min.js"></script>
 	</body>
