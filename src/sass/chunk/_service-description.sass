@@ -43,6 +43,9 @@
       font-size: 24px
 
   &__inner-price
+    display: flex
+    justify-content: space-between
+    align-items: center
     margin-bottom: 25px
     @media screen and ( max-width: 768px )
       margin-bottom: 15px
@@ -50,6 +53,7 @@
       margin-bottom: 5px
 
   &__price
+    margin-right: 50px
     font-family: "Montserrat-ExtraBold", sans-serif
     font-weight: 700
     font-size: 50px
@@ -65,6 +69,29 @@
       line-height: 42px
     @media screen and ( max-width: 425px )
       font-size: 32px
+
+  &__inner-select
+    position: relative
+    &::after, &::before
+      position: absolute
+      content: ""
+      width: 9px
+      border-top: 2px solid $black
+      top: 50%
+      right: 25px
+      transform: rotate(45deg)
+    &::after
+      right: 20px
+      transform: rotate(-45deg)
+
+  &__list-offer
+    all: unset
+    padding: 10px 20px
+    padding-right: 40px
+    background-color: $mercury
+    border-radius: 20px
+    font-family: "Montserrat-Medium", sans-serif
+    font-weight: 500
 
   &__link
     margin-bottom: 40px
@@ -108,8 +135,12 @@
     flex-direction: column
     margin-bottom: 20px
     padding-left: 20px
+    &--non-pushing
+      margin-bottom: 0
     @media screen and ( max-width: 425px )
       margin-bottom: 10px
+      &--non-pushing
+        margin-bottom: 0
 
   &__item
     margin-bottom: 20px
