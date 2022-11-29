@@ -4344,6 +4344,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -4354,12 +4366,15 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0 0 0 50px;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding-left: 50px;
+  padding-bottom: 50px;
   border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hero__inner {
+    padding-left: 20px;
+    padding-bottom: 70px;
+  }
 }
 .hero__price {
   margin-bottom: 30px;
@@ -4370,17 +4385,60 @@ body {
   background-color: #DFA650;
   border-radius: 40px;
 }
+@media screen and (max-width: 1120px) {
+  .hero__price {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__price {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
 .hero__title {
   margin-bottom: 30px;
-  max-width: 500px;
+  max-width: 830px;
   font-family: "Montserrat-Black", sans-serif;
   font-weight: 800;
   font-size: 80px;
   line-height: 84px;
   color: #FFFFFF;
 }
+.hero__title--already {
+  max-width: 500px;
+}
+@media screen and (max-width: 1120px) {
+  .hero__title {
+    max-width: 790px;
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .hero__title--already {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__title {
+    margin-bottom: 20px;
+    max-width: 460px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .hero__title--already {
+    max-width: 170px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero__title {
+    font-size: 25px;
+    line-height: 29px;
+  }
+}
 .hero__link {
-  margin-bottom: 50px;
   padding: 20px 30px;
   font-family: "Montserrat-ExtraBold", sans-serif;
   font-weight: 700;
@@ -4388,6 +4446,19 @@ body {
   line-height: 24px;
   background-color: #F6F1E4;
   border-radius: 50px;
+}
+@media screen and (max-width: 1120px) {
+  .hero__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__link {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .hero__terms {
   display: -webkit-box;
@@ -4401,13 +4472,17 @@ body {
           align-items: center;
   width: 100%;
 }
+@media screen and (max-width: 1175px) {
+  .hero__terms {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 890px;
+  }
+}
 .hero__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4417,7 +4492,18 @@ body {
 .hero__card--already {
   max-width: 220px;
 }
+@media screen and (max-width: 1175px) {
+  .hero__card--already {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .hero__card {
+    max-width: 100%;
+  }
+}
 .hero__icon {
+  margin-right: 10px;
   width: 80px;
   height: 80px;
 }
@@ -4427,17 +4513,43 @@ body {
 .hero__excerpt--already {
   max-width: 130px;
 }
+@media screen and (max-width: 1175px) {
+  .hero__excerpt--already {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .hero__excerpt {
+    max-width: 100%;
+  }
+}
 
 .swiper {
   margin-bottom: 70px;
   width: 100%;
   height: 632px;
 }
+@media screen and (max-width: 768px) {
+  .swiper {
+    height: 380px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .swiper {
+    margin-bottom: 30px;
+  }
+}
 
 .swiper-pagination {
   text-align: right;
   margin-bottom: 30px;
-  bottom: 0;
+  bottom: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  .swiper-pagination {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -4451,6 +4563,12 @@ body {
 }
 .swiper-pagination-bullet:last-child {
   margin-right: 30px !important;
+}
+@media screen and (max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
 }
 .swiper-pagination-bullet-active {
   background-color: #FFFFFF;
