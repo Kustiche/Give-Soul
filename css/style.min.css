@@ -4655,16 +4655,50 @@ body.lock {
     max-width: 200px;
   }
 }
-.catalog__img {
+.catalog__inner-img {
   margin-bottom: 30px;
+  position: relative;
+}
+@media screen and (max-width: 880px) {
+  .catalog__inner-img {
+    margin-bottom: 10px;
+  }
+}
+.catalog__img {
   border-radius: 20px 20px 0 0;
   width: 100%;
   height: auto;
 }
+.catalog__descr {
+  display: none;
+  position: absolute;
+  padding: 15px;
+  border-radius: 0 20px;
+  background-color: #DFA650;
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+}
 @media screen and (max-width: 880px) {
-  .catalog__img {
-    margin-bottom: 10px;
+  .catalog__descr {
+    padding: 10px;
+    border-radius: 0 8px;
+    font-size: 14px;
+    line-height: 14px;
   }
+}
+@media screen and (max-width: 425px) {
+  .catalog__descr {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+.catalog__descr--on {
+  display: block;
 }
 .catalog__heading {
   margin-bottom: 10px;
