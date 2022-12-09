@@ -4333,6 +4333,7 @@ body.lock {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 20px;
 }
 .hero__inner {
   display: -webkit-box;
