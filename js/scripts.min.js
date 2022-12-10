@@ -28,13 +28,11 @@ const isMobile = {
 
 //меню бургер
 
-const phone = document.querySelector('.header__phone')
 const menuBurger = document.querySelector('.burger');
 const menuNav = document.querySelector('.nav');
 if (menuBurger) {
   menuBurger.addEventListener('click', function(e) {
     document.body.classList.toggle('lock')
-    phone.classList.toggle('active');
     menuBurger.classList.toggle('active');
     menuNav.classList.toggle('active');
   });
@@ -57,7 +55,6 @@ if (menuLinks.length > 0) {
 
       if (menuBurger.classList.contains('active')) {
         document.body.classList.remove('lock')
-        phone.classList.toggle('active');
         menuBurger.classList.remove('active');
         menuNav.classList.remove('active');
       }
