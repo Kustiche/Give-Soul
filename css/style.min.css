@@ -4268,6 +4268,11 @@ body.lock {
   height: 65px;
   z-index: 5;
 }
+.logo--footer {
+  margin-bottom: 30px;
+  width: 264px;
+  height: 84px;
+}
 .logo__img {
   width: 100%;
   height: 100%;
@@ -4353,8 +4358,15 @@ body.touch .menu__link {
     width: 41px;
     height: 43px;
   }
+  .logo--footer {
+    width: 264px;
+    height: 84px;
+  }
   .logo__img {
     display: none;
+  }
+  .logo__img--footer {
+    display: block;
   }
   .logo__img-adaptive {
     display: block;
@@ -5565,14 +5577,10 @@ body.touch .menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
-  gap: 0 20px;
 }
 .footer__wrap::before {
   position: absolute;
@@ -5582,25 +5590,34 @@ body.touch .menu__link {
   top: -60px;
   left: 0;
 }
-@media (max-width: 850px) {
-  .footer__wrap {
+@media (max-width: 425px) {
+  .footer__wrap::before {
+    top: -30px;
+  }
+}
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0 20px;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .footer__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-@media (max-width: 425px) {
-  .footer__wrap {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-  }
-  .footer__wrap::before {
-    top: -30px;
+    width: inherit;
   }
 }
 .footer__inner {
@@ -5615,7 +5632,7 @@ body.touch .menu__link {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-@media (max-width: 850px) {
+@media (max-width: 992px) {
   .footer__inner {
     display: none;
   }
@@ -5629,7 +5646,7 @@ body.touch .menu__link {
 .footer__copyright--off {
   display: none;
 }
-@media (max-width: 850px) {
+@media (max-width: 992px) {
   .footer__copyright--off {
     display: inline-block;
     max-width: 100%;
@@ -5649,12 +5666,12 @@ body.touch .menu__link {
   max-width: 445px;
   width: 100%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__inner-menu-and-contacts {
     max-width: 305px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 992px) {
   .footer__inner-menu-and-contacts {
     margin-bottom: 30px;
   }
@@ -5665,7 +5682,7 @@ body.touch .menu__link {
   line-height: 28px;
   text-transform: capitalize;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__list-heading {
     font-size: 20px;
     line-height: 24px;
@@ -5700,7 +5717,7 @@ body.touch .menu__link {
       -ms-transform: scale(95%);
           transform: scale(95%);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__phone {
     font-size: 21px;
     line-height: 25px;
@@ -5730,13 +5747,13 @@ body.touch .menu__link {
   min-width: 320px;
   width: 320px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__questions {
     min-width: 280px;
     width: 280px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 992px) {
   .footer__questions {
     margin-bottom: 30px;
   }
@@ -5749,7 +5766,7 @@ body.touch .menu__link {
   line-height: 34px;
   text-transform: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__title {
     font-size: 21px;
     line-height: 25px;
@@ -5758,7 +5775,7 @@ body.touch .menu__link {
 .footer__text {
   margin-bottom: 20px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__text {
     font-size: 14px;
     line-height: 18px;
@@ -5767,7 +5784,7 @@ body.touch .menu__link {
 .footer__button {
   padding: 15px 30px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__button {
     padding: 10px 20px;
     font-size: 14px;
@@ -5790,7 +5807,7 @@ body.touch .menu__link {
 .footer-menu__item:last-child {
   margin-bottom: 0;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer-menu__item {
     font-size: 14px;
     line-height: 18px;
