@@ -5069,15 +5069,19 @@ body.touch .menu__link {
     max-width: 100%;
   }
 }
-.action__subtitle {
+.action__inner-subtitle {
   margin-bottom: 35px;
+  position: relative;
+}
+.action__subtitle {
+  margin: 0;
   font-family: "Montserrat-Medium", sans-serif;
   font-weight: 500;
   font-size: 30px;
   line-height: 34px;
   color: #FFFFFF;
-  z-index: 1;
   position: relative;
+  z-index: 1;
 }
 @media (max-width: 1250px) {
   .action__subtitle {
@@ -5093,7 +5097,7 @@ body.touch .menu__link {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: -50%;
   left: -60px;
 }
@@ -5204,15 +5208,15 @@ body.touch .menu__link {
     padding: 8px 38px;
   }
 }
-.action__inner-picture {
+.action__picture {
   max-width: 530px;
   height: auto;
   border-radius: 20px;
 }
-.action__picture {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
+@media (max-width: 1060px) {
+  .action__picture {
+    max-width: 100%;
+  }
 }
 
 .action-swiper {
@@ -5713,9 +5717,9 @@ body.touch .menu__link {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 .footer__phone:hover {
-  -webkit-transform: scale(95%);
-      -ms-transform: scale(95%);
-          transform: scale(95%);
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
 }
 @media (max-width: 1200px) {
   .footer__phone {
@@ -5949,6 +5953,7 @@ body.touch .menu__link {
 }
 @media (max-width: 425px) {
   .service-description__price {
+    margin-right: 20px;
     font-size: 32px;
   }
 }
