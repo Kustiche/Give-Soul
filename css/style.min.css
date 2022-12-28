@@ -1227,7 +1227,7 @@ body.touch .menu__link {
   }
 }
 .catalog__heading {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   max-width: 330px;
   text-align: center;
   font-family: "Montserrat-SemiBold", sans-serif;
@@ -1241,13 +1241,11 @@ body.touch .menu__link {
 }
 @media (max-width: 880px) {
   .catalog__heading {
-    margin-bottom: 10px;
     font-size: 19px;
   }
 }
 @media (max-width: 515px) {
   .catalog__heading {
-    margin-bottom: 10px;
     max-width: 140px;
     font-size: 16px;
     line-height: 20px;
