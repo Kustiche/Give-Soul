@@ -2473,6 +2473,7 @@ body.touch .menu__link {
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  z-index: 10;
 }
 .modal__body {
   display: -webkit-box;
